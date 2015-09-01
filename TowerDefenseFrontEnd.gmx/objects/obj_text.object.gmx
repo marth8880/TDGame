@@ -25,23 +25,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room = rm_1)
+            <string>if (room = rm_start)
 {
     draw_set_font(fnt_title);
     draw_set_halign(fa_center);
     draw_set_color(c_white);
     draw_text(room_width / 2, room_height / 6, "Tower Defense Game");
 }
-else if (room = rm_2)
+else if (room = rm_options)
 {
     draw_set_font(fnt_title);
     draw_set_halign(fa_center);
     draw_set_color(c_white);
     draw_text(room_width / 2, room_height / 6, "Game Options");
 }
-else if (room = rm_3)
+else if (room = rm_levelselect)
 {
-    draw_set_font(fnt_text);
+    draw_set_font(fnt_title_small);
     draw_set_halign(fa_center);
     draw_set_color(c_white);
     draw_text(room_width / 2, room_height / 6, "Tap anywhere to purchase object");

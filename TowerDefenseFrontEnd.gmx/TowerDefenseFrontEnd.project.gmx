@@ -8,7 +8,9 @@
   <sprites name="sprites">
     <sprite>sprites\spr_button</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bgd_wood_1</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\ParentalGateBlock.gml</script>
@@ -28,9 +30,12 @@
     <object>objects\obj_button</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_1</room>
-    <room>rooms\rm_2</room>
-    <room>rooms\rm_3</room>
+    <room>rooms\rm_start</room>
+    <room>rooms\rm_options</room>
+    <room>rooms\rm_levelselect</room>
+    <room>rooms\rm_lvl_1</room>
+    <room>rooms\rm_lvl_2</room>
+    <room>rooms\rm_lvl_3</room>
   </rooms>
   <constants number="1">
     <constant name="MOUSE_LMB">device_mouse_check_button_released(0, mb_left)</constant>

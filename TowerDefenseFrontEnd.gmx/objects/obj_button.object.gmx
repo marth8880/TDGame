@@ -56,17 +56,34 @@ if (interactable)
             <kind>1</kind>
             <string>switch (myText)
 {
+    //TOP-MENU BUTTONS
     case "Start Game":
-        room_goto(rm_3);
+        room_goto(rm_levelselect);
         break;
     case "Options":
-        room_goto(rm_2);
-        break;
-    case "Back":
-        room_goto(rm_1);
+        room_goto(rm_options);
         break;
     case "Quit Game":
         game_end();
+        break;
+        
+    //LEVELS
+    case "Level 1":
+        room_goto(rm_lvl_1);
+        break;
+    case "Level 2":
+        room_goto(rm_lvl_2);
+        break;
+    case "Level 3":
+        room_goto(rm_lvl_3);
+        break;
+        
+    //COMMON BUTTONS
+    case "Back":
+        room_goto(rm_start);
+        break;
+    case "Quit Level":
+        room_goto(rm_levelselect);
         break;
 }
 </string>
