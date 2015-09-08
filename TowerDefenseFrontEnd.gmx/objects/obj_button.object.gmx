@@ -25,13 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var myText, interactable, myFontType, myFontColor, myFontHAlign, myFontVAlign;
+            <string>var myText, interactable, myFontType, myFontColor, myFontHAlign, myFontVAlign, myButtonSprite;
 interactable = false;
 
 image_speed = 0;
 
 if (interactable)
-    sprite_index = spr_Button;
+    sprite_index = myButtonSprite;
 </string>
           </argument>
         </arguments>
@@ -60,11 +60,22 @@ if (interactable)
     case "Start Game":
         room_goto(rm_levelselect);
         break;
+    case "Cash Shop":
+        room_goto(rm_shop);
+        break;
     case "Options":
         room_goto(rm_options);
         break;
     case "Quit Game":
         game_end();
+        break;
+        
+    //CASH SHOP
+    case "Single-Use Items":
+        room_goto(rm_shop_1use);
+        break;
+    case "Upgrades":
+        room_goto(rm_shop_upgrades);
         break;
         
     //LEVELS
@@ -80,7 +91,10 @@ if (interactable)
         
     //COMMON BUTTONS
     case "Back":
-        room_goto(rm_start);
+        if (room = rm_shop_1use || room = rm_shop_upgrades)
+            room_goto(rm_shop);
+        else
+            room_goto(rm_start);
         break;
     case "Quit Level":
         room_goto(rm_levelselect);

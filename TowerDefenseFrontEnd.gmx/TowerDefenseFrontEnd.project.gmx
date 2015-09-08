@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_button_square</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgd_wood_1</background>
@@ -31,6 +32,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
+    <room>rooms\rm_shop</room>
+    <room>rooms\rm_shop_1use</room>
+    <room>rooms\rm_shop_upgrades</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_levelselect</room>
     <room>rooms\rm_lvl_1</room>
