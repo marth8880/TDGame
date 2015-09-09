@@ -4,10 +4,16 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\Sound_BGM</sound>
+    <sound>sound\Sound_Effect</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_button_square</sprite>
+    <sprite>sprites\spr_shop_product_temp</sprite>
+    <sprite>sprites\Spr_Bar</sprite>
+    <sprite>sprites\Spr_Slider</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgd_wood_1</background>
@@ -18,9 +24,17 @@
     <script>scripts\ParentalGatePass.gml</script>
     <script>scripts\ButtonClicked.gml</script>
     <script>scripts\Scr_ButtonSpawner.gml</script>
+    <script>scripts\Scr_ShopProductSpawner.gml</script>
+    <script>scripts\Scr_SoundControl_SaveLoad.gml</script>
+    <script>scripts\Scr_SoundControl_Create.gml</script>
+    <script>scripts\Scr_SoundControl_Draw.gml</script>
+    <script>scripts\Scr_SoundControl_Step.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_button_text</font>
+    <font>fonts\fnt_shop_product_header</font>
+    <font>fonts\fnt_shop_product_subheader</font>
+    <font>fonts\fnt_shop_product_benefit</font>
     <font>fonts\fnt_title</font>
     <font>fonts\fnt_title_small</font>
   </fonts>
@@ -29,12 +43,22 @@
     <object>objects\obj_text</object>
     <object>objects\obj_continue</object>
     <object>objects\obj_button</object>
+    <object>objects\obj_shop_product</object>
+    <object>objects\obj_soundcontrol</object>
+    <object>objects\MasterBar</object>
+    <object>objects\MusicBar</object>
+    <object>objects\EffectsBar</object>
+    <object>objects\MasterSlider</object>
+    <object>objects\MusicSlider</object>
+    <object>objects\EffectsSlider</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_shop</room>
     <room>rooms\rm_shop_1use</room>
     <room>rooms\rm_shop_upgrades</room>
+    <room>rooms\rm_shop_units</room>
+    <room>rooms\rm_shop_traps</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_levelselect</room>
     <room>rooms\rm_lvl_1</room>
@@ -47,6 +71,11 @@
   <help>
     <rtf>help.rtf</rtf>
   </help>
+  <audiogroups name="audiogroups">
+    <audiogroup name="audiogroup_default"/>
+    <audiogroup name="ag_music"/>
+    <audiogroup name="ag_effects"/>
+  </audiogroups>
   <TutorialState>
     <IsTutorial>0</IsTutorial>
     <TutorialName></TutorialName>

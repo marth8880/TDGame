@@ -77,6 +77,12 @@ if (interactable)
     case "Upgrades":
         room_goto(rm_shop_upgrades);
         break;
+    case "Units":
+        room_goto(rm_shop_units);
+        break;
+    case "Traps":
+        room_goto(rm_shop_traps);
+        break;
         
     //LEVELS
     case "Level 1":
@@ -93,6 +99,8 @@ if (interactable)
     case "Back":
         if (room = rm_shop_1use || room = rm_shop_upgrades)
             room_goto(rm_shop);
+        else if (room = rm_shop_units || room = rm_shop_traps)
+            room_goto(rm_shop_upgrades);
         else
             room_goto(rm_start);
         break;
