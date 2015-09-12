@@ -7,19 +7,19 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>5</bbox_left>
-  <bbox_right>306</bbox_right>
-  <bbox_top>57</bbox_top>
-  <bbox_bottom>211</bbox_bottom>
+  <bbox_left>22</bbox_left>
+  <bbox_right>613</bbox_right>
+  <bbox_top>7</bbox_top>
+  <bbox_bottom>45</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>320</width>
-  <height>320</height>
+  <width>670</width>
+  <height>50</height>
   <frames>
-    <frame index="0">images\Spr_wood_0.png</frame>
+    <frame index="0">images\Spr_pit_0.png</frame>
   </frames>
 </sprite>

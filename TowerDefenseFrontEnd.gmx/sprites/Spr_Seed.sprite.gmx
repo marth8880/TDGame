@@ -7,19 +7,22 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>5</bbox_left>
-  <bbox_right>306</bbox_right>
-  <bbox_top>57</bbox_top>
-  <bbox_bottom>211</bbox_bottom>
+  <bbox_left>49</bbox_left>
+  <bbox_right>388</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>399</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>320</width>
-  <height>320</height>
+  <width>400</width>
+  <height>400</height>
   <frames>
-    <frame index="0">images\Spr_wood_0.png</frame>
+    <frame index="0">images\Spr_Seed_0.png</frame>
+    <frame index="1">images\Spr_Seed_1.png</frame>
+    <frame index="2">images\Spr_Seed_2.png</frame>
+    <frame index="3">images\Spr_Seed_3.png</frame>
   </frames>
 </sprite>
