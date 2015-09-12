@@ -19,6 +19,9 @@
     <sprite>sprites\spr_enemy_3</sprite>
     <sprite>sprites\spr_rock_1</sprite>
     <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\Spr_Card1</sprite>
+    <sprite>sprites\Spr_GarretsFace</sprite>
+    <sprite>sprites\Spr_Wood</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgd_wood_1</background>
@@ -66,6 +69,9 @@
     <object>objects\obj_enemy_controller</object>
     <object>objects\obj_Enemy_Spawner_CTRL</object>
     <object>objects\obj_obstacle_small</object>
+    <object>objects\Obj_AnnoyingAaron</object>
+    <object>objects\Obj_GarretsFace</object>
+    <object>objects\Obj_Wood</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

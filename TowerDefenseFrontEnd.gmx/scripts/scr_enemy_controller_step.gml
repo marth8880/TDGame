@@ -19,25 +19,27 @@ if(position_meeting(x + sprite_width/2 + myMovementSpeed, y, obj_obstacle_small)
 }*/
 
 //If no target is in front of the player, continue
-if(!position_meeting(x + sprite_width/2 + myMovementSpeed, y, obj_obstacle_small))
+if(!position_meeting(x + sprite_width/2 + myMovementSpeed, y + 24, obj_obstacle_small))
 {
-    switch(currentState)
+    if (!position_meeting(x + sprite_width/2 + myMovementSpeed, y - 24, obj_obstacle_small))
     {
-        case "REROUTE":
+        switch(currentState)
         {
-           
-           alarm[0] = 3;
-            
-        }
-        case "":
-        {
-            currentState = "";
-            x += myMovementSpeed;
-            randReroute = 0;
-            canRandomize = true;
+            case "REROUTE":
+            {
+               
+               alarm[0] = 3;
+                
+            }
+            case "":
+            {
+                currentState = "";
+                x += myMovementSpeed;
+                randReroute = 0;
+                canRandomize = true;
+            }
         }
     }
-    
 }
 
 
@@ -55,12 +57,24 @@ if(currentState == "REROUTE")
     {
         case 1:
         {
+            if (position_meeting(x + sprite_width/2, y + 24, obj_obstacle_small))
+            {
+                randReroute = 2;
+                break;
+            }
             y += myMovementSpeed;
+            break;
         }
         
         case 2:
         {
+            if (position_meeting(x + sprite_width/2, y - 24, obj_obstacle_small))
+            {
+                randReroute = 1;
+                break;
+            }
             y -= myMovementSpeed;
+            break;
         }
     }
 }

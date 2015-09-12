@@ -5,15 +5,15 @@ var enemyType;
 enemyType = argument0;
 
 //Row Variables
-row1 = 160;
-row2 = 224;
-row3 = 288;
-row4 = 352;
-row5 = 416;
-row6 = 480;
-row7 = 544;
-row8 = 608;
-row9 = 672;
+row1 = 168;
+row2 = 232;
+row3 = 296;
+row4 = 360;
+row5 = 424;
+row6 = 488;
+row7 = 552;
+row8 = 616;
+row9 = 680;
 
 /**************Randomely choose a row to spawn on (NEEDS DIFFICULTY CHECKS LATER)***************/
 //Randomely picks a lane to spawn in
@@ -50,7 +50,7 @@ switch(randRow)
         break;
 }
 //Spawns an enemy (NEEDS DIFICULTY CHECKS LATER)
-newestEnemy = instance_create(50, spawnAt - 15, obj_enemy_basic)
+newestEnemy = instance_create(50, spawnAt - 15, obj_enemy_basic) 
 
 
 /**************Assign the newest generated enemy it's attributes***************/
@@ -71,4 +71,3 @@ switch(enemyType)
         newestEnemy.myMovementSpeed = 3;
         break;
 }
-
