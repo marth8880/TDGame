@@ -45,12 +45,12 @@
     <object>objects\obj_button</object>
     <object>objects\obj_shop_product</object>
     <object>objects\obj_soundcontrol</object>
-    <object>objects\MasterBar</object>
-    <object>objects\MusicBar</object>
-    <object>objects\EffectsBar</object>
-    <object>objects\MasterSlider</object>
-    <object>objects\MusicSlider</object>
-    <object>objects\EffectsSlider</object>
+    <object>objects\obj_snd_MasterBar</object>
+    <object>objects\obj_snd_MusicBar</object>
+    <object>objects\obj_snd_EffectsBar</object>
+    <object>objects\obj_snd_MasterSlider</object>
+    <object>objects\obj_snd_MusicSlider</object>
+    <object>objects\obj_snd_EffectsSlider</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
