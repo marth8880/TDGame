@@ -14,6 +14,11 @@
     <sprite>sprites\spr_shop_product_temp</sprite>
     <sprite>sprites\Spr_Bar</sprite>
     <sprite>sprites\Spr_Slider</sprite>
+    <sprite>sprites\spr_enemy_1</sprite>
+    <sprite>sprites\spr_enemy_2</sprite>
+    <sprite>sprites\spr_enemy_3</sprite>
+    <sprite>sprites\spr_rock_1</sprite>
+    <sprite>sprites\sprite0</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgd_wood_1</background>
@@ -29,6 +34,12 @@
     <script>scripts\Scr_SoundControl_Create.gml</script>
     <script>scripts\Scr_SoundControl_Draw.gml</script>
     <script>scripts\Scr_SoundControl_Step.gml</script>
+    <script>scripts\scr_enemy_controller_alarm0.gml</script>
+    <script>scripts\scr_enemy_controller_create.gml</script>
+    <script>scripts\scr_enemy_controller_step.gml</script>
+    <script>scripts\scr_enemy_spawner.gml</script>
+    <script>scripts\scr_enemy_spawner_CTRL_create.gml</script>
+    <script>scripts\script3.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_button_text</font>
@@ -51,6 +62,10 @@
     <object>objects\obj_snd_MasterSlider</object>
     <object>objects\obj_snd_MusicSlider</object>
     <object>objects\obj_snd_EffectsSlider</object>
+    <object>objects\obj_enemy_basic</object>
+    <object>objects\obj_enemy_controller</object>
+    <object>objects\obj_Enemy_Spawner_CTRL</object>
+    <object>objects\obj_obstacle_small</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
@@ -62,6 +77,7 @@
     <room>rooms\rm_options</room>
     <room>rooms\rm_levelselect</room>
     <room>rooms\rm_lvl_1</room>
+    <room>rooms\rm_lvl_1a</room>
     <room>rooms\rm_lvl_2</room>
     <room>rooms\rm_lvl_3</room>
   </rooms>

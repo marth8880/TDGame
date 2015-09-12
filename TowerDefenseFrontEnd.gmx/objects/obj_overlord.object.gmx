@@ -198,8 +198,8 @@
             with(obj_shop_product)
                 instance_destroy();
         }
-        Scr_ButtonSpawner( room_width / 2, room_height / 8, "&lt;lvl1 placeholder&gt;", false, fnt_title_small, c_white, fa_center, fa_center, spr_button );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Quit Level", true, fnt_button_text, c_white, fa_center, fa_center, spr_button );
+        //Scr_ButtonSpawner( room_width / 2, room_height / 8, "&lt;lvl1 placeholder&gt;", false, fnt_title_small, c_white, fa_center, fa_center, spr_button );
+        Scr_ButtonSpawner( room_width / 1.2, room_height / 1.05, "Quit Level", true, fnt_button_text, c_white, fa_center, fa_center, spr_button );
         break;
     case rm_lvl_2:
         //clean up any active buttons
