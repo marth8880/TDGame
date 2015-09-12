@@ -3,7 +3,7 @@
   <spriteName>spr_button</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-20</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -54,59 +54,84 @@ if (interactable)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (myText)
+            <string>if (!purchaseDialogOpen)
 {
-    //TOP-MENU BUTTONS
-    case "Start Game":
-        room_goto(rm_levelselect);
-        break;
-    case "Cash Shop":
-        room_goto(rm_shop);
-        break;
-    case "Options":
-        room_goto(rm_options);
-        break;
-    case "Quit Game":
-        game_end();
-        break;
-        
-    //CASH SHOP
-    case "Single-Use Items":
-        room_goto(rm_shop_1use);
-        break;
-    case "Upgrades":
-        room_goto(rm_shop_upgrades);
-        break;
-    case "Units":
-        room_goto(rm_shop_units);
-        break;
-    case "Traps":
-        room_goto(rm_shop_traps);
-        break;
-        
-    //LEVELS
-    case "Level 1":
-        room_goto(rm_lvl_1);
-        break;
-    case "Level 2":
-        room_goto(rm_lvl_2);
-        break;
-    case "Level 3":
-        room_goto(rm_lvl_3);
-        break;
-        
-    //COMMON BUTTONS
-    case "Back":
-        if (room = rm_shop_1use || room = rm_shop_upgrades)
+    switch (myText)
+    {
+        //TOP-MENU BUTTONS
+        case "Start Game":
+            room_goto(rm_levelselect);
+            break;
+        case "Cash Shop":
             room_goto(rm_shop);
-        else if (room = rm_shop_units || room = rm_shop_traps)
+            break;
+        case "Options":
+            room_goto(rm_options);
+            break;
+        case "Quit Game":
+            game_end();
+            break;
+            
+        //CASH SHOP
+        case "Single-Use Items":
+            room_goto(rm_shop_1use);
+            break;
+        case "Upgrades":
             room_goto(rm_shop_upgrades);
-        else
-            room_goto(rm_start);
-        break;
-    case "Quit Level":
-        room_goto(rm_levelselect);
-        break;
+            break;
+        case "Units":
+            room_goto(rm_shop_units);
+            break;
+        case "Traps":
+            room_goto(rm_shop_traps);
+            break;
+        case "Yes":
+            with (obj_fullscreen_box)
+                instance_destroy();
+            break;
+        case "No":
+            with (obj_fullscreen_box)
+                instance_destroy();
+            break;
+            
+        //LEVELS
+        case "Level 1":
+            room_goto(rm_lvl_1);
+            break;
+        case "Level 2":
+            room_goto(rm_lvl_2);
+            break;
+        case "Level 3":
+            room_goto(rm_lvl_3);
+            break;
+            
+        //COMMON BUTTONS
+        case "Back":
+            if (room = rm_shop_1use || room = rm_shop_upgrades)
+                room_goto(rm_shop);
+            else if (room = rm_shop_units || room = rm_shop_traps)
+                room_goto(rm_shop_upgrades);
+            else
+                room_goto(rm_start);
+            break;
+        case "Quit Level":
+            room_goto(rm_levelselect);
+            break;
+    }
+}
+else
+{
+    switch (myText)
+    {
+        case "Yes":
+            with (obj_payment_dialogbox)
+                instance_destroy();
+            break;
+        case "No":
+            with (obj_payment_dialogbox)
+                instance_destroy();
+            break;
+    }
 }
 </string>
           </argument>

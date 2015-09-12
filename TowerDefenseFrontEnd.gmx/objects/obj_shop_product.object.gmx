@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var myHeaderText, myHeaderFontType, myHeaderVOffset, mySubHeaderText, mySubHeaderFontType, mySubHeaderVOffset, myBenefitText, myBenefitFontType, myBenefitVOffset, myButtonFontColor, myProductSprite;
+            <string>var myHeaderText, myHeaderFontType, myHeaderVOffset, mySubHeaderText, mySubHeaderFontType, mySubHeaderVOffset, myBenefitText, myBenefitFontType, myBenefitVOffset, myButtonFontColor, myProductSprite, myProductCost;
 
 image_speed = 0;
 
@@ -52,15 +52,12 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>msg = show_question("Do you want to buy " + string(myHeaderText) + " for " + string(myProductCost) + " coins?");
-
-if (msg)
+            <string>if (!purchaseDialogOpen)
 {
-    donemsg = show_message("Transaction successful!");
-    if (donemsg)
-    {
-        room_goto(rm_shop);
-    }
+    shopItemHeaderText = myHeaderText;
+    shopItemProductCost = myProductCost;
+    
+    purchasePopUp = instance_create(room_width / 2, room_height / 2, obj_payment_dialogbox);
 }
 </string>
           </argument>

@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>1600</width>
-  <height>1004</height>
+  <width>1920</width>
+  <height>1080</height>
   <data>images\bgd_wood_1.png</data>
 </background>

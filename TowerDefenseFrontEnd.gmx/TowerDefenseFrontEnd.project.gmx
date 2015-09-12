@@ -18,10 +18,9 @@
     <sprite>sprites\spr_enemy_2</sprite>
     <sprite>sprites\spr_enemy_3</sprite>
     <sprite>sprites\spr_rock_1</sprite>
+    <sprite>sprites\spr_dialogbox</sprite>
+    <sprite>sprites\spr_fullscreen_box</sprite>
     <sprite>sprites\sprite0</sprite>
-    <sprite>sprites\Spr_Card1</sprite>
-    <sprite>sprites\Spr_GarretsFace</sprite>
-    <sprite>sprites\Spr_Wood</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgd_wood_1</background>
@@ -56,8 +55,6 @@
     <object>objects\obj_overlord</object>
     <object>objects\obj_text</object>
     <object>objects\obj_continue</object>
-    <object>objects\obj_button</object>
-    <object>objects\obj_shop_product</object>
     <object>objects\obj_soundcontrol</object>
     <object>objects\obj_snd_MasterBar</object>
     <object>objects\obj_snd_MusicBar</object>
@@ -69,9 +66,12 @@
     <object>objects\obj_enemy_controller</object>
     <object>objects\obj_Enemy_Spawner_CTRL</object>
     <object>objects\obj_obstacle_small</object>
-    <object>objects\Obj_AnnoyingAaron</object>
-    <object>objects\Obj_GarretsFace</object>
-    <object>objects\Obj_Wood</object>
+    <objects name="UI">
+      <object>objects\obj_button</object>
+      <object>objects\obj_shop_product</object>
+      <object>objects\obj_payment_dialogbox</object>
+      <object>objects\obj_fullscreen_box</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
@@ -83,7 +83,6 @@
     <room>rooms\rm_options</room>
     <room>rooms\rm_levelselect</room>
     <room>rooms\rm_lvl_1</room>
-    <room>rooms\rm_lvl_1a</room>
     <room>rooms\rm_lvl_2</room>
     <room>rooms\rm_lvl_3</room>
   </rooms>

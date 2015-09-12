@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>globalvar shopItemHeaderText, shopItemProductCost, purchaseDialogOpen;
+
+purchaseDialogOpen = false;
+</string>
           </argument>
         </arguments>
       </action>
