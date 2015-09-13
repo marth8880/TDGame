@@ -3,7 +3,7 @@
   <caption></caption>
   <width>1920</width>
   <height>1080</height>
-  <vsnap>128</vsnap>
+  <vsnap>64</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
@@ -52,7 +52,12 @@
   </views>
   <instances>
     <instance objName="obj_soundcontrol" x="64" y="32" name="inst_4560C9F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_snd_MasterBar" x="288" y="384" name="inst_DFDD340C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snd_MasterBar" x="288" y="320" name="inst_DFDD340C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snd_MasterSlider" x="1632" y="320" name="inst_175603F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snd_MusicBar" x="288" y="512" name="inst_0305EA5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snd_MusicSlider" x="1632" y="512" name="inst_69D06ACA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snd_EffectsBar" x="288" y="704" name="inst_94453D6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snd_EffectsSlider" x="1632" y="704" name="inst_4DB64783" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

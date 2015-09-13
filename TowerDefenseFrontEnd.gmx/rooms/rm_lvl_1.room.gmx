@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="obj_Enemy_Spawner_CTRL" x="0" y="0" name="inst_F528DA8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_Button_Spawner" x="1856" y="128" name="inst_D077E3AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_obstacle_small" x="660" y="540" name="inst_26BC3207" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_obstacle_small" x="900" y="720" name="inst_73341C56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_obstacle_small" x="660" y="900" name="inst_65FFA921" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -61,6 +60,11 @@
     <instance objName="obj_obstacle_small" x="1080" y="540" name="inst_2A644862" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_obstacle_small" x="900" y="360" name="inst_9BC94D1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_obstacle_small" x="240" y="360" name="inst_00C8764C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HUD" x="0" y="0" name="inst_56112D4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HUD_Unit_Fighter" x="1800" y="60" name="inst_1C501F3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HUD_Unit_Archer" x="1800" y="180" name="inst_F79912AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HUD_Trap_Pit" x="1800" y="300" name="inst_A4661FE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HUD_Trap_Spikes" x="1800" y="420" name="inst_5FE197B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

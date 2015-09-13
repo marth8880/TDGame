@@ -3,7 +3,7 @@
   <spriteName>Spr_GarretsFace</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>-30</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xpart=0;
-ypart=0;
-direction=0;
-grabbed=false;
+            <string>xpart = 0;
+ypart = 0;
+direction = 0;
+grabbed = false;
 </string>
           </argument>
         </arguments>
@@ -53,8 +53,8 @@ grabbed=false;
             <kind>1</kind>
             <string>if (grabbed)
 {
-  x=mouse_x-xpart;
-  y=mouse_y-ypart;
+    x = mouse_x - xpart;
+    y = mouse_y - ypart;
 }
 </string>
           </argument>
@@ -78,9 +78,9 @@ grabbed=false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>grabbed=false;
-direction=point_direction(xprevious,yprevious,x,y);
-move_snap(32,32); 
+            <string>grabbed = false;
+direction = point_direction(xprevious,yprevious,x,y);
+move_snap(32,32);
 if (place_meeting(x, y, Obj_Wood))
 {
     instance_destroy(); 
@@ -107,20 +107,19 @@ if (place_meeting(x, y, Obj_Wood))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>grabbed=true;
+            <string>grabbed = true;
 if (y &gt;= 100)
 {
-    direction=0;
-    xpart=mouse_x-x;
-    ypart=mouse_y-y;
+    direction = 0;
+    xpart = mouse_x - x;
+    ypart = mouse_y - y;
 }
-
 else
 {
     xpart = x;
     ypart = y; 
 }
-audio_play_sound(sound_effect, 1, false); 
+audio_play_sound(sound_effect, 1, false);
 </string>
           </argument>
         </arguments>
