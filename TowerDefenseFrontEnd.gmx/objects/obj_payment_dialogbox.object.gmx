@@ -29,7 +29,7 @@
 
 //fullscreenPopUp = instance_create(0, 0, obj_fullscreen_box);
 
-msg = "Do you want to buy " + string(shopItemHeaderText) + " for " + string(shopItemProductCost) + " coins?";
+//msg = "Do you want to buy " + string(shopItemHeaderText) + " for " + string(shopItemProductCost) + " coins?";
 </string>
           </argument>
         </arguments>

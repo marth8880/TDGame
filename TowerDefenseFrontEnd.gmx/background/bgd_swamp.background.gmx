@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>2100</width>
-  <height>1500</height>
+  <width>1920</width>
+  <height>1080</height>
   <data>images\bgd_swamp.png</data>
 </background>

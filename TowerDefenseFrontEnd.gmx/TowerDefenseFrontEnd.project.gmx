@@ -81,7 +81,7 @@
     <font>fonts\fnt_title_small</font>
   </fonts>
   <objects name="objects">
-    <object>objects\Obj_AnnoyingAaron</object>
+    <object>objects\Obj_Button_Spawner</object>
     <object>objects\obj_overlord</object>
     <object>objects\obj_text</object>
     <object>objects\Obj_GarretsFace</object>
@@ -97,6 +97,7 @@
     <object>objects\obj_enemy_controller</object>
     <object>objects\obj_Enemy_Spawner_CTRL</object>
     <object>objects\obj_obstacle_small</object>
+    <object>objects\Obj_Wood</object>
     <objects name="UI">
       <object>objects\obj_button</object>
       <object>objects\obj_shop_product</object>

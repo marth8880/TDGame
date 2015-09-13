@@ -57,9 +57,14 @@ image_speed = 0;
     shopItemHeaderText = myHeaderText;
     shopItemProductCost = myProductCost;
     
+    msg = show_question("Do you want to buy " + string(shopItemHeaderText) + " for " + string(shopItemProductCost) + " coins?");
+    
+    if (msg)
+    {
+        show_message("Purchase successful!");
+    }
+    
     //purchasePopUp = instance_create(room_width / 2, room_height / 2, obj_payment_dialogbox);
-    
-    
 }
 </string>
           </argument>
