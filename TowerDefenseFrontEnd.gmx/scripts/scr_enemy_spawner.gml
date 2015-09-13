@@ -15,7 +15,7 @@ row7 = 552;
 row8 = 616;
 row9 = 680;
 
-/**************Randomely choose a row to spawn on (NEEDS DIFFICULTY CHECKS LATER)***************/
+/**************Randomly choose a row to spawn on (NEEDS DIFFICULTY CHECKS LATER)***************/
 //Randomely picks a lane to spawn in
 randomize();
 randRow = irandom_range(1,9);
@@ -49,25 +49,34 @@ switch(randRow)
         spawnAt = row9;
         break;
 }
-//Spawns an enemy (NEEDS DIFICULTY CHECKS LATER)
+//Spawns an enemy (NEEDS DIFFICULTY CHECKS LATER)
 newestEnemy = instance_create(50, spawnAt - 15, obj_enemy_basic) 
 
 
-/**************Assign the newest generated enemy it's attributes***************/
-//Randmely picks an enemy type
+/**************Assign the newest generated enemy its attributes***************/
+//Randomly picks an enemy type
 
 switch(enemyType)
 {
     case 1:
-        newestEnemy.sprite_index = spr_enemy_1
+        newestEnemy.sprite_index = Spr_Seed;
+        newestEnemy.image_speed = 1/7;
+        newestEnemy.image_xscale = -0.35;
+        newestEnemy.image_yscale = 0.35;
         newestEnemy.myMovementSpeed = 1;
         break;
     case 2:
-        newestEnemy.sprite_index = spr_enemy_2
+        newestEnemy.sprite_index = Spr_flyguy;
+        newestEnemy.image_speed = 1/7;
+        newestEnemy.image_xscale = -0.25;
+        newestEnemy.image_yscale = 0.25;
         newestEnemy.myMovementSpeed = 2;
         break;
     case 3:
-        newestEnemy.sprite_index = spr_enemy_3
+        newestEnemy.sprite_index = Spr_Mushroom;
+        newestEnemy.image_speed = 1/7;
+        newestEnemy.image_xscale = -0.25;
+        newestEnemy.image_yscale = 0.25;
         newestEnemy.myMovementSpeed = 3;
         break;
 }

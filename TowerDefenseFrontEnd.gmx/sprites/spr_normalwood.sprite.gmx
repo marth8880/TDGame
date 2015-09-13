@@ -7,22 +7,19 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>47</bbox_left>
-  <bbox_right>442</bbox_right>
-  <bbox_top>47</bbox_top>
-  <bbox_bottom>384</bbox_bottom>
+  <bbox_left>11</bbox_left>
+  <bbox_right>312</bbox_right>
+  <bbox_top>72</bbox_top>
+  <bbox_bottom>226</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>470</width>
-  <height>420</height>
+  <width>320</width>
+  <height>320</height>
   <frames>
-    <frame index="0">images\Spr_flyguy_0.png</frame>
-    <frame index="1">images\Spr_flyguy_1.png</frame>
-    <frame index="2">images\Spr_flyguy_2.png</frame>
-    <frame index="3">images\Spr_flyguy_3.png</frame>
+    <frame index="0">images\spr_normalwood_0.png</frame>
   </frames>
 </sprite>

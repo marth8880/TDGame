@@ -9,20 +9,49 @@
     <sound>sound\Sound_Effect</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_button</sprite>
-    <sprite>sprites\spr_button_square</sprite>
-    <sprite>sprites\spr_shop_product_temp</sprite>
-    <sprite>sprites\Spr_Bar</sprite>
-    <sprite>sprites\Spr_Slider</sprite>
-    <sprite>sprites\spr_enemy_1</sprite>
-    <sprite>sprites\spr_enemy_2</sprite>
-    <sprite>sprites\spr_enemy_3</sprite>
-    <sprite>sprites\spr_rock_1</sprite>
-    <sprite>sprites\spr_dialogbox</sprite>
-    <sprite>sprites\spr_fullscreen_box</sprite>
+    <sprite>sprites\Spr_Card1</sprite>
+    <sprite>sprites\spr_circle</sprite>
+    <sprite>sprites\Spr_GarretsFace</sprite>
+    <sprite>sprites\Spr_Wood</sprite>
     <sprite>sprites\sprite0</sprite>
+    <sprites name="UI">
+      <sprite>sprites\spr_button</sprite>
+      <sprite>sprites\spr_button_square</sprite>
+      <sprite>sprites\spr_shop_product_temp</sprite>
+      <sprite>sprites\spr_dialogbox</sprite>
+      <sprite>sprites\Spr_Slider</sprite>
+      <sprite>sprites\Spr_Bar</sprite>
+      <sprite>sprites\spr_fullscreen_box</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\Spr_flower</sprite>
+      <sprite>sprites\Spr_flyguy</sprite>
+      <sprite>sprites\Spr_maggot</sprite>
+      <sprite>sprites\Spr_Mushroom</sprite>
+      <sprite>sprites\spr_snail</sprite>
+      <sprite>sprites\Spr_Seed</sprite>
+    </sprites>
+    <sprites name="Obstacles">
+      <sprite>sprites\spr_firerock</sprite>
+      <sprite>sprites\Spr_firewood</sprite>
+      <sprite>sprites\Spr_rock</sprite>
+      <sprite>sprites\spr_waterrock</sprite>
+      <sprite>sprites\Spr_Waterwood</sprite>
+      <sprite>sprites\spr_normalwood</sprite>
+    </sprites>
+    <sprites name="Units">
+      <sprite>sprites\Spr_Archer</sprite>
+      <sprite>sprites\Spr_fighter</sprite>
+    </sprites>
+    <sprites name="Traps">
+      <sprite>sprites\Spr_pit</sprite>
+      <sprite>sprites\Spr_spikes</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
+    <background>background\bgd_swamp</background>
+    <background>background\bgd_water</background>
+    <background>background\bgd_fire</background>
     <background>background\bgd_wood_1</background>
   </backgrounds>
   <paths name="paths"/>
@@ -52,8 +81,10 @@
     <font>fonts\fnt_title_small</font>
   </fonts>
   <objects name="objects">
+    <object>objects\Obj_AnnoyingAaron</object>
     <object>objects\obj_overlord</object>
     <object>objects\obj_text</object>
+    <object>objects\Obj_GarretsFace</object>
     <object>objects\obj_continue</object>
     <object>objects\obj_soundcontrol</object>
     <object>objects\obj_snd_MasterBar</object>
