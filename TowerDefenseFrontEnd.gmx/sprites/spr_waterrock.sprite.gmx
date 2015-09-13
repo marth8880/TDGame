@@ -6,19 +6,19 @@
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
-  <bboxmode>0</bboxmode>
-  <bbox_left>8</bbox_left>
-  <bbox_right>467</bbox_right>
-  <bbox_top>56</bbox_top>
-  <bbox_bottom>264</bbox_bottom>
+  <bboxmode>1</bboxmode>
+  <bbox_left>0</bbox_left>
+  <bbox_right>191</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>191</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>480</width>
-  <height>400</height>
+  <width>192</width>
+  <height>192</height>
   <frames>
     <frame index="0">images\spr_waterrock_0.png</frame>
   </frames>

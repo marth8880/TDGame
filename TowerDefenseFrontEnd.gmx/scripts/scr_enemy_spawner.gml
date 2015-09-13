@@ -41,22 +41,16 @@ switch(enemyType)
     case 1:
         newestEnemy.sprite_index = Spr_Seed;
         newestEnemy.image_speed = 1/7;
-        newestEnemy.image_xscale = -0.25;
-        newestEnemy.image_yscale = 0.25;
         newestEnemy.myMovementSpeed = 1;
         break;
     case 2:
         newestEnemy.sprite_index = Spr_flyguy;
         newestEnemy.image_speed = 1/7;
-        newestEnemy.image_xscale = -0.2;
-        newestEnemy.image_yscale = 0.2;
         newestEnemy.myMovementSpeed = 2;
         break;
     case 3:
         newestEnemy.sprite_index = Spr_Mushroom;
         newestEnemy.image_speed = 1/7;
-        newestEnemy.image_xscale = -0.2;
-        newestEnemy.image_yscale = 0.2;
         newestEnemy.myMovementSpeed = 3;
         break;
 }

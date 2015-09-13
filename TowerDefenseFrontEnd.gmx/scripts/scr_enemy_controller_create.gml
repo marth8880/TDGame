@@ -4,4 +4,3 @@ randReroute = 0;
 
 currentState = "";
 canRandomize = true;
-

@@ -3,22 +3,22 @@
   <type>0</type>
   <xorig>0</xorig>
   <yorigin>0</yorigin>
-  <colkind>2</colkind>
+  <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
-  <bboxmode>0</bboxmode>
+  <bboxmode>1</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>488</bbox_right>
+  <bbox_right>191</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>548</bbox_bottom>
+  <bbox_bottom>191</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>500</width>
-  <height>550</height>
+  <width>192</width>
+  <height>192</height>
   <frames>
     <frame index="0">images\Spr_flower_0.png</frame>
     <frame index="1">images\Spr_flower_1.png</frame>
@@ -39,5 +39,6 @@
     <frame index="16">images\Spr_flower_16.png</frame>
     <frame index="17">images\Spr_flower_17.png</frame>
     <frame index="18">images\Spr_flower_18.png</frame>
+    <frame index="19">images\Spr_flower_19.png</frame>
   </frames>
 </sprite>

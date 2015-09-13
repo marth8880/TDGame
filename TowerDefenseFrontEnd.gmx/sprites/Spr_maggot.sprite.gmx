@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>12</bbox_left>
-  <bbox_right>394</bbox_right>
-  <bbox_top>31</bbox_top>
-  <bbox_bottom>284</bbox_bottom>
+  <bbox_left>23</bbox_left>
+  <bbox_right>169</bbox_right>
+  <bbox_top>30</bbox_top>
+  <bbox_bottom>117</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>400</width>
-  <height>300</height>
+  <width>192</width>
+  <height>144</height>
   <frames>
     <frame index="0">images\Spr_maggot_0.png</frame>
     <frame index="1">images\Spr_maggot_1.png</frame>
@@ -29,8 +29,5 @@
     <frame index="6">images\Spr_maggot_6.png</frame>
     <frame index="7">images\Spr_maggot_7.png</frame>
     <frame index="8">images\Spr_maggot_8.png</frame>
-    <frame index="9">images\Spr_maggot_9.png</frame>
-    <frame index="10">images\Spr_maggot_10.png</frame>
-    <frame index="11">images\Spr_maggot_11.png</frame>
   </frames>
 </sprite>
