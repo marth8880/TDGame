@@ -9,11 +9,10 @@
     <sound>sound\Sound_Effect</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\Spr_Card1</sprite>
+    <sprite>sprites\spr_unit_button</sprite>
     <sprite>sprites\spr_circle</sprite>
     <sprite>sprites\Spr_GarretsFace</sprite>
     <sprite>sprites\Spr_Wood</sprite>
-    <sprite>sprites\sprite0</sprite>
     <sprites name="UI">
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_button_square</sprite>
@@ -25,14 +24,19 @@
       <sprite>sprites\spr_hud</sprite>
     </sprites>
     <sprites name="Enemies">
+      <sprite>sprites\spr_spawn_point_2</sprite>
+      <sprite>sprites\spr_spawn_point_4</sprite>
+      <sprite>sprites\spr_spawn_point_3</sprite>
       <sprite>sprites\Spr_flower</sprite>
       <sprite>sprites\Spr_flyguy</sprite>
       <sprite>sprites\Spr_maggot</sprite>
       <sprite>sprites\Spr_Mushroom</sprite>
       <sprite>sprites\spr_snail</sprite>
       <sprite>sprites\Spr_Seed</sprite>
+      <sprite>sprites\spr_spawn_point</sprite>
     </sprites>
     <sprites name="Obstacles">
+      <sprite>sprites\spr_invisible_collision</sprite>
       <sprite>sprites\spr_firerock</sprite>
       <sprite>sprites\Spr_firewood</sprite>
       <sprite>sprites\Spr_rock</sprite>
@@ -48,11 +52,7 @@
       <sprite>sprites\Spr_pit</sprite>
       <sprite>sprites\Spr_spikes</sprite>
     </sprites>
-    <sprite>sprites\spr_spawn_point</sprite>
-    <sprite>sprites\spr_spawn_point_2</sprite>
-    <sprite>sprites\spr_spawn_point_3</sprite>
-    <sprite>sprites\spr_spawn_point_4</sprite>
-    <sprite>sprites\spr_invisible_collision</sprite>
+    <sprite>sprites\spr_end_zone</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgd_swamp</background>
@@ -86,10 +86,6 @@
   <objects name="objects">
     <object>objects\obj_obstacle_small</object>
     <object>objects\Obj_Wood</object>
-    <object>objects\obj_unit_fighter</object>
-    <object>objects\obj_unit_archer</object>
-    <object>objects\obj_trap_pit</object>
-    <object>objects\obj_trap_spikes</object>
     <objects name="UI">
       <object>objects\obj_HUD</object>
       <object>objects\Obj_GarretsFace</object>
@@ -125,6 +121,15 @@
       <object>objects\obj_soundcontrol</object>
     </objects>
     <object>objects\obj_collision</object>
+    <object>objects\obj_end_zone</object>
+    <objects name="Traps">
+      <object>objects\obj_trap_spikes</object>
+      <object>objects\obj_trap_pit</object>
+    </objects>
+    <objects name="Units">
+      <object>objects\obj_unit_archer</object>
+      <object>objects\obj_unit_fighter</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
