@@ -185,7 +185,7 @@ direction = point_direction(xprevious,yprevious,x,y);
 
 
 
-move_snap(196,180);
+move_snap(192,180);
 
 alarm[1] = 1;
 

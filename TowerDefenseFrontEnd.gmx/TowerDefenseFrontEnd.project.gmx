@@ -22,7 +22,6 @@
       <sprite>sprites\Spr_Bar</sprite>
       <sprite>sprites\spr_fullscreen_box</sprite>
       <sprite>sprites\spr_hud</sprite>
-      <sprite>sprites\sprite35</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_spawn_point_2</sprite>
