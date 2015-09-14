@@ -22,6 +22,7 @@
       <sprite>sprites\Spr_Bar</sprite>
       <sprite>sprites\spr_fullscreen_box</sprite>
       <sprite>sprites\spr_hud</sprite>
+      <sprite>sprites\sprite35</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_spawn_point_2</sprite>
@@ -47,6 +48,8 @@
     <sprites name="Units">
       <sprite>sprites\Spr_Archer</sprite>
       <sprite>sprites\Spr_fighter</sprite>
+      <sprite>sprites\spr_Firefighter</sprite>
+      <sprite>sprites\spr_IceFighter</sprite>
     </sprites>
     <sprites name="Traps">
       <sprite>sprites\Spr_pit</sprite>

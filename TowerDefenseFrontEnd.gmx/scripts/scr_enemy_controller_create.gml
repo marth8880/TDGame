@@ -15,4 +15,3 @@ currentTarget = "";
 canAttack = true;
 canCollide = true;
 
-
