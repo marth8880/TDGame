@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-30</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -11,41 +11,37 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>9</kind>
-            <script>scr_enemy_controller_create</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <kind>1</kind>
+            <string>direction = 0;
+grabbed = false;
+unitChosen = "";
+image_speed = 0;
+canAttack = false;
+
+myCurrentHealth = 100;
+myMaxHealth = 100;
+
+currentTarget = ""
+myDamage = 0;
+inCombat = false;
+
+
+
+
+</string>
           </argument>
         </arguments>
       </action>
@@ -67,7 +63,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_enemy_alarm0</script>
+            <script>scr_unit_parent_alarm0</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -95,6 +91,60 @@
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (grabbed)
+{
+    x = mouse_x - sprite_width / 2;
+    y = mouse_y - sprite_height / 2;
+}
+
+if(myCurrentHealth &lt;= 0)
+{
+    with(self)
+    {
+        instance_destroy();
+    }
+}
+
+if(inCombat)
+{
+    if(canAttack)
+       {
+            if(currentTarget.myCurrentHealth &lt;= 0)
+            {
+                inCombat = false;
+            }
+            else
+            {
+                canAttack = false;
+                currentTarget.myCurrentHealth -= myDamage;
+                alarm[0] = 15; 
+            }
+       }
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_enemy_basic">
+      <action>
+        <libid>1</libid>
         <id>601</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -109,7 +159,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_enemy_controller_step</script>
+            <script>scr_unit_parent_collision</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -134,86 +184,47 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_unit_fighter">
+    <event eventtype="6" enumb="56">
       <action>
         <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>9</kind>
-            <script>obj_enemy_controller_collision</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_unit_archer">
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>obj_enemy_controller_collision</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <kind>1</kind>
+            <string>grabbed = false;
+direction = point_direction(xprevious,yprevious,x,y);
+
+
+
+move_snap(196,180);
+
+if (!place_meeting(x, y, obj_placeable_area) || place_meeting(x, y, obj_unit_parent))
+{
+    instance_destroy(); 
+}
+
+//Activates capabilities
+canAttack = true;
+
+if(unitChosen == "Archer")
+{
+myDamage = 25;
+}
+if(unitChosen == "Fighter")
+{
+myDamage = 35;
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -235,7 +246,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_enemy_controller_draw</script>
+            <script>scr_unit_parent_draw</script>
           </argument>
           <argument>
             <kind>0</kind>

@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="obj_Enemy_Spawner_CTRL" x="0" y="0" name="inst_F528DA8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_HUD_Unit_Fighter" x="1824" y="270" name="inst_1C501F3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_HUD_Unit_Archer" x="1824" y="180" name="inst_F79912AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_HUD_Trap_Pit" x="1824" y="630" name="inst_A4661FE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_HUD_Trap_Spikes" x="1824" y="720" name="inst_5FE197B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -78,6 +77,36 @@
     <instance objName="obj_end_zone" x="1632" y="810" name="inst_176D6BE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_end_zone" x="1632" y="630" name="inst_077769FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_end_zone" x="1632" y="450" name="inst_373225D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="96" y="990" name="inst_CA98BE68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="96" y="810" name="inst_972FA0A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="96" y="630" name="inst_9EF5C0BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="96" y="450" name="inst_5C1E21CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="288" y="630" name="inst_99C3BBB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="288" y="810" name="inst_AB359DEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="288" y="990" name="inst_CA529151" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="480" y="990" name="inst_7A5A8B1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="480" y="630" name="inst_58EB406A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="480" y="450" name="inst_B0311F9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="672" y="990" name="inst_DEDE201D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="672" y="810" name="inst_889A38FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="672" y="630" name="inst_A9A22004" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="672" y="450" name="inst_1C46E508" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="864" y="990" name="inst_33F99CCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="864" y="810" name="inst_0448EC52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="864" y="630" name="inst_E75E1264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="864" y="450" name="inst_BD2C63C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1056" y="450" name="inst_E1E88915" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1056" y="990" name="inst_AB820913" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1056" y="810" name="inst_1273EC25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1248" y="990" name="inst_670B0517" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1248" y="810" name="inst_DA41E2C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1248" y="630" name="inst_498AF7CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1248" y="450" name="inst_75F1BD0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1440" y="990" name="inst_E01F05D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1440" y="810" name="inst_61327687" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1440" y="630" name="inst_C14E79D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_placeable_area" x="1440" y="450" name="inst_4332AA08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HUD_Unit_Fighter" x="1824" y="270" name="inst_2A631679" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

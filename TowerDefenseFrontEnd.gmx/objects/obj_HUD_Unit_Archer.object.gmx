@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Selection = instance_create(x, y, Obj_GarretsFace);
+            <string>Selection = instance_create(x, y, obj_unit_archer);
 Selection.grabbed = true;
+Selection.unitChosen = "Archer";
 </string>
           </argument>
         </arguments>

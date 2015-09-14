@@ -9,12 +9,12 @@
     <sound>sound\Sound_Effect</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_unit_button</sprite>
     <sprite>sprites\spr_circle</sprite>
     <sprite>sprites\Spr_GarretsFace</sprite>
     <sprite>sprites\Spr_Wood</sprite>
     <sprites name="UI">
       <sprite>sprites\spr_button</sprite>
+      <sprite>sprites\spr_unit_button</sprite>
       <sprite>sprites\spr_button_square</sprite>
       <sprite>sprites\spr_shop_product_temp</sprite>
       <sprite>sprites\spr_dialogbox</sprite>
@@ -53,6 +53,7 @@
       <sprite>sprites\Spr_spikes</sprite>
     </sprites>
     <sprite>sprites\spr_end_zone</sprite>
+    <sprite>sprites\spr_placeable_slot</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgd_swamp</background>
@@ -64,15 +65,24 @@
   <scripts name="scripts">
     <script>scripts\Scr_ButtonSpawner.gml</script>
     <script>scripts\Scr_ShopProductSpawner.gml</script>
-    <script>scripts\Scr_SoundControl_SaveLoad.gml</script>
-    <script>scripts\Scr_SoundControl_Create.gml</script>
-    <script>scripts\Scr_SoundControl_Draw.gml</script>
-    <script>scripts\Scr_SoundControl_Step.gml</script>
-    <script>scripts\scr_enemy_controller_alarm0.gml</script>
-    <script>scripts\scr_enemy_controller_create.gml</script>
-    <script>scripts\scr_enemy_controller_step.gml</script>
-    <script>scripts\scr_enemy_spawner.gml</script>
-    <script>scripts\scr_enemy_spawner_CTRL_create.gml</script>
+    <scripts name="Enemy">
+      <script>scripts\scr_enemy_controller_step.gml</script>
+      <script>scripts\scr_enemy_controller_create.gml</script>
+      <script>scripts\scr_enemy_alarm0.gml</script>
+      <script>scripts\obj_enemy_controller_collision.gml</script>
+      <script>scripts\scr_enemy_spawner_CTRL_create.gml</script>
+      <script>scripts\scr_enemy_spawner.gml</script>
+      <script>scripts\scr_enemy_controller_draw.gml</script>
+    </scripts>
+    <scripts name="Sound">
+      <script>scripts\Scr_SoundControl_Step.gml</script>
+      <script>scripts\Scr_SoundControl_SaveLoad.gml</script>
+      <script>scripts\Scr_SoundControl_Draw.gml</script>
+      <script>scripts\Scr_SoundControl_Create.gml</script>
+    </scripts>
+    <script>scripts\scr_unit_parent_draw.gml</script>
+    <script>scripts\scr_unit_parent_collision.gml</script>
+    <script>scripts\scr_unit_parent_alarm0.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_button_text</font>
@@ -84,11 +94,11 @@
     <font>fonts\fnt_title_small</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_end_zone</object>
+    <object>objects\obj_collision</object>
     <object>objects\obj_obstacle_small</object>
-    <object>objects\Obj_Wood</object>
     <objects name="UI">
       <object>objects\obj_HUD</object>
-      <object>objects\Obj_GarretsFace</object>
       <object>objects\obj_button</object>
       <object>objects\obj_shop_product</object>
       <object>objects\obj_payment_dialogbox</object>
@@ -120,16 +130,16 @@
       <object>objects\obj_continue</object>
       <object>objects\obj_soundcontrol</object>
     </objects>
-    <object>objects\obj_collision</object>
-    <object>objects\obj_end_zone</object>
     <objects name="Traps">
       <object>objects\obj_trap_spikes</object>
       <object>objects\obj_trap_pit</object>
     </objects>
     <objects name="Units">
+      <object>objects\obj_unit_parent</object>
       <object>objects\obj_unit_archer</object>
       <object>objects\obj_unit_fighter</object>
     </objects>
+    <object>objects\obj_placeable_area</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

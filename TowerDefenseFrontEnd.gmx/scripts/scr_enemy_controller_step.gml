@@ -1,4 +1,4 @@
-//Horizontal Obstacle Collision Checks
+//Obstacle Collision Checks
 if(position_meeting(x + sprite_width/2, y, obj_obstacle_small) && canReroute)
 {
     currentState = "REROUTE"
@@ -37,6 +37,32 @@ if(position_meeting(x + sprite_width/2, y, obj_obstacle_small) && canReroute)
     }
 }
 
+//Combat Collision Checks
+if(currentState == "COMBAT")
+{
+   if(canAttack)
+   {
+    
+        canAttack = false;
+        currentTarget.myCurrentHealth -= myDamage;
+        if(currentTarget.myCurrentHealth <= 0)
+        {
+            currentState = "";
+        }
+        alarm[0] = 15; 
+   }
+}
+
+//Death Check
+if(myCurrentHealth <= 0)
+{
+currentTarget.inCombat = false;
+    with(self)
+    {
+        instance_destroy();
+    }
+}
+
 //RE-ROUTE STATE
 if(currentState == "REROUTE")
 {
@@ -47,7 +73,6 @@ if(currentState == "REROUTE")
        canRandomize = true;
        canReroute = true;
        
-        //show_message("reached newY");
     }
     else
     {
@@ -63,5 +88,8 @@ if(currentState == "REROUTE")
 }
 else
 {
-x += myMovementSpeed;
+    if(currentState != "COMBAT")
+    {
+        x += myMovementSpeed;
+    }
 }
