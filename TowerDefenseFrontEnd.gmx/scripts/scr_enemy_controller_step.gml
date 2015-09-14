@@ -1,80 +1,67 @@
 //Horizontal Obstacle Collision Checks
-if(position_meeting(x + sprite_width/2 + myMovementSpeed, y, obj_obstacle_small))
+if(position_meeting(x + sprite_width/2, y, obj_obstacle_small) && canReroute)
 {
     currentState = "REROUTE"
-}
-
-//Vertical Obstacle Collision Checks
-/*if(currentState = "REROUTE")
-{
-    if(position_meeting(x, y + myMovementSpeed, obj_obstacle_small))
-    {
-        randRoute = 2;
-    }
+    canReroute = false;
     
-     if(position_meeting(x, y - myMovementSpeed, obj_obstacle_small))
-    {
-        randRoute = 1;
-    }
-}*/
-
-//If no target is in front of the player, continue
-if(!position_meeting(x + sprite_width/2 + myMovementSpeed, y + 24, obj_obstacle_small))
-{
-    if (!position_meeting(x + sprite_width/2 + myMovementSpeed, y - 24, obj_obstacle_small))
-    {
-        switch(currentState)
-        {
-            case "REROUTE":
-            {
-               
-               alarm[0] = 3;
-                
-            }
-            case "":
-            {
-                currentState = "";
-                x += myMovementSpeed;
-                randReroute = 0;
-                canRandomize = true;
-            }
-        }
-    }
-}
-
-
-//RE-ROUTE STATE
-if(currentState == "REROUTE")
-{
-    if(canRandomize)
-    {
-        canRandomize = false;
-        randomize();
-        randReroute = irandom_range(1,2);
-    }
-    
+    canRandomize = false;
+    randomize();
+    randReroute = 1;//irandom_range(1,2);
+     
     switch(randReroute)
     {
         case 1:
         {
-            if (position_meeting(x + sprite_width/2, y + 24, obj_obstacle_small))
+        
+            //this is up
+            if (position_meeting(x, y - sprite_height, obj_obstacle_small) || position_meeting(x, y - sprite_height, obj_collision))
             {
-                randReroute = 2;
+                newY = y + sprite_height;
                 break;
             }
-            y += myMovementSpeed;
+            newY = y - sprite_height;
             break;
         }
         
         case 2:
         {
-            if (position_meeting(x + sprite_width/2, y - 24, obj_obstacle_small))
+            //this is down
+            if (position_meeting(x, y + sprite_height, obj_obstacle_small) || position_meeting(x, y + sprite_height, obj_collision))
             {
-                randReroute = 1;
+                newY = y - sprite_height;
                 break;
             }
-            y -= myMovementSpeed;
+            newY = y + sprite_height;
             break;
         }
     }
+}
+
+//RE-ROUTE STATE
+if(currentState == "REROUTE")
+{
+    if(y <= newY + 10 && y >= newY - 10)
+    {
+       y = newY;
+       currentState = "";
+       canRandomize = true;
+       canReroute = true;
+       
+        //show_message("reached newY");
+    }
+    else
+    {
+        if(newY > y)
+        {
+            y += myMovementSpeed;  
+        } 
+        if(newY < y)
+        {
+            y -= myMovementSpeed;  
+        } 
+    }
+}
+else
+{
+x += myMovementSpeed;
 }

@@ -48,6 +48,11 @@
       <sprite>sprites\Spr_pit</sprite>
       <sprite>sprites\Spr_spikes</sprite>
     </sprites>
+    <sprite>sprites\spr_spawn_point</sprite>
+    <sprite>sprites\spr_spawn_point_2</sprite>
+    <sprite>sprites\spr_spawn_point_3</sprite>
+    <sprite>sprites\spr_spawn_point_4</sprite>
+    <sprite>sprites\spr_invisible_collision</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgd_swamp</background>
@@ -57,9 +62,6 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\ParentalGateBlock.gml</script>
-    <script>scripts\ParentalGatePass.gml</script>
-    <script>scripts\ButtonClicked.gml</script>
     <script>scripts\Scr_ButtonSpawner.gml</script>
     <script>scripts\Scr_ShopProductSpawner.gml</script>
     <script>scripts\Scr_SoundControl_SaveLoad.gml</script>
@@ -71,7 +73,6 @@
     <script>scripts\scr_enemy_controller_step.gml</script>
     <script>scripts\scr_enemy_spawner.gml</script>
     <script>scripts\scr_enemy_spawner_CTRL_create.gml</script>
-    <script>scripts\script3.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_button_text</font>
@@ -83,13 +84,6 @@
     <font>fonts\fnt_title_small</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_overlord</object>
-    <object>objects\obj_text</object>
-    <object>objects\obj_continue</object>
-    <object>objects\obj_soundcontrol</object>
-    <object>objects\obj_enemy_basic</object>
-    <object>objects\obj_enemy_controller</object>
-    <object>objects\obj_Enemy_Spawner_CTRL</object>
     <object>objects\obj_obstacle_small</object>
     <object>objects\Obj_Wood</object>
     <object>objects\obj_unit_fighter</object>
@@ -115,6 +109,22 @@
       <object>objects\obj_snd_MusicSlider</object>
       <object>objects\obj_snd_EffectsSlider</object>
     </objects>
+    <objects name="Enemy">
+      <object>objects\obj_enemy_basic</object>
+      <object>objects\obj_Enemy_Spawner_CTRL</object>
+      <object>objects\obj_enemy_controller</object>
+      <object>objects\obj_lane_1_spawn_point</object>
+      <object>objects\obj_lane_2_spawn_point</object>
+      <object>objects\obj_lane_3_spawn_point</object>
+      <object>objects\obj_lane_4_spawn_point</object>
+    </objects>
+    <objects name="FrontEnd">
+      <object>objects\obj_overlord</object>
+      <object>objects\obj_text</object>
+      <object>objects\obj_continue</object>
+      <object>objects\obj_soundcontrol</object>
+    </objects>
+    <object>objects\obj_collision</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
