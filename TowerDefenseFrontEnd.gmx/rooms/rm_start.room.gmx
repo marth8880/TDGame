@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_overlord" x="0" y="0" name="inst_3117884D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_soundcontrol" x="64" y="0" name="inst_8E8E7A5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

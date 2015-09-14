@@ -40,14 +40,27 @@ if(position_meeting(x + sprite_width/2, y, obj_obstacle_small) && canReroute)
 //Combat Collision Checks
 if(currentState == "COMBAT")
 {
-   if(canAttack)
+    enemyOutOfRange = false;
+    if(canAttack)
    {
-    
+        //Enemy Attack
         canAttack = false;
         currentTarget.myCurrentHealth -= myDamage;
+        
+        //Player Attack
+        myCurrentHealth -= currentTarget.myDamage;
+        
+        //Player Attack
         if(currentTarget.myCurrentHealth <= 0)
         {
-            currentState = "";
+            if(newY != 0)
+            {
+                currentState = "REROUTE";
+            }
+            else
+            {
+                currentState = "";
+            }
         }
         alarm[0] = 15; 
    }
@@ -56,7 +69,7 @@ if(currentState == "COMBAT")
 //Death Check
 if(myCurrentHealth <= 0)
 {
-currentTarget.inCombat = false;
+    currentTarget.inCombat = false;
     with(self)
     {
         instance_destroy();

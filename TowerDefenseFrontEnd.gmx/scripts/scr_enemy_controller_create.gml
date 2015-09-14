@@ -13,5 +13,5 @@ myDamage = 0;
 
 currentTarget = "";
 canAttack = true;
-canCollide = true;
+enemyOutOfRange = true;
 
