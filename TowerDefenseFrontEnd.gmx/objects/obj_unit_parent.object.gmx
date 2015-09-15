@@ -34,10 +34,11 @@ canAttack = false;
 myCurrentHealth = 100;
 myMaxHealth = 100;
 
-currentTarget = ""
+myCost = 50;
+
+currentTarget = "";
 myDamage = 0;
 inCombat = false;
-
 
 
 
@@ -188,6 +189,9 @@ direction = point_direction(xprevious,yprevious,x,y);
 move_snap(192,180);
 
 alarm[1] = 1;
+
+//deduct cost
+fakeMoney -= myCost;
 
 //Activates capabilities
 canAttack = true;

@@ -92,11 +92,11 @@ purchaseDialogOpen = false;
             with(obj_shop_product)
                 instance_destroy();
         }
-        Scr_ButtonSpawner( room_width / 2, room_height / 8, "Tower Defense Game", false, fnt_title, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 3, "Start Game", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 2, "Cash Shop", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.5, "Options", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Quit Game", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 8, "Enchanted Forest", false, fnt_title, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 3, "Start Game", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 2, "Cash Shop", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.5, "Options", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Quit Game", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
         Scr_ButtonSpawner( room_width / 24, room_height / 8, "Coins: " + string(coins), false, fnt_shop_product_header, c_white, fa_left, fa_center, spr_button, true );
         break;
     case rm_shop:
@@ -112,9 +112,9 @@ purchaseDialogOpen = false;
                 instance_destroy();
         }
         Scr_ButtonSpawner( room_width / 2, room_height / 8, "Cash Shop", false, fnt_title, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 4, room_height / 2, "Single-Use Items", true, fnt_button_text, c_white, fa_center, fa_center, spr_button_square, false );
-        Scr_ButtonSpawner( room_width / 1.3333, room_height / 2, "Upgrades", true, fnt_button_text, c_white, fa_center, fa_center, spr_button_square, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 4, room_height / 2, "Single-Use Items", true, fnt_button_text, c_black, fa_center, fa_center, spr_button_square, false );
+        Scr_ButtonSpawner( room_width / 1.3333, room_height / 2, "Upgrades", true, fnt_button_text, c_black, fa_center, fa_center, spr_button_square, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
         Scr_ButtonSpawner( room_width / 24, room_height / 8, "Coins: " + string(coins), false, fnt_shop_product_header, c_white, fa_left, fa_center, spr_button, true );
         break;
     case rm_shop_1use:
@@ -131,7 +131,7 @@ purchaseDialogOpen = false;
         }
         Scr_ButtonSpawner( room_width / 2, room_height / 8, "Single-Use Items", false, fnt_title, c_white, fa_center, fa_center, spr_button, false );
         Scr_ShopProductSpawner( room_width / 2, room_height / 2, "Full Heal", 96, "Select / Buy", -76, "Benefits", -108, spr_shop_product_temp, 25, 0 );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
         Scr_ButtonSpawner( room_width / 24, room_height / 8, "Coins: " + string(coins), false, fnt_shop_product_header, c_white, fa_left, fa_center, spr_button, true );
         break;
     case rm_shop_upgrades:
@@ -147,9 +147,9 @@ purchaseDialogOpen = false;
                 instance_destroy();
         }
         Scr_ButtonSpawner( room_width / 2, room_height / 8, "Units and Traps", false, fnt_title, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 4, room_height / 2, "Units", true, fnt_button_text, c_white, fa_center, fa_center, spr_button_square, false );
-        Scr_ButtonSpawner( room_width / 1.3333, room_height / 2, "Traps", true, fnt_button_text, c_white, fa_center, fa_center, spr_button_square, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 4, room_height / 2, "Units", true, fnt_button_text, c_black, fa_center, fa_center, spr_button_square, false );
+        Scr_ButtonSpawner( room_width / 1.3333, room_height / 2, "Traps", true, fnt_button_text, c_black, fa_center, fa_center, spr_button_square, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
         Scr_ButtonSpawner( room_width / 24, room_height / 8, "Coins: " + string(coins), false, fnt_shop_product_header, c_white, fa_left, fa_center, spr_button, true );
         break;
     case rm_shop_units:
@@ -172,7 +172,7 @@ purchaseDialogOpen = false;
             Scr_ShopProductSpawner( room_width / 2, room_height / 1.75, "Element 3", 96, "Select / Buy", -76, "Benefits", -108, spr_shop_product_temp, 100 );
             Scr_ShopProductSpawner( room_width / 1.455, room_height / 1.75, "Element 4", 96, "Select / Buy", -76, "Benefits", -108, spr_shop_product_temp, 100 );
             Scr_ShopProductSpawner( room_width / 1.15, room_height / 1.75, "Element 5", 96, "Select / Buy", -76, "Benefits", -108, spr_shop_product_temp, 100 );*/
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
         Scr_ButtonSpawner( room_width / 24, room_height / 8, "Coins: " + string(coins), false, fnt_shop_product_header, c_white, fa_left, fa_center, spr_button, true );
         break;
     case rm_shop_traps:
@@ -190,8 +190,8 @@ purchaseDialogOpen = false;
         Scr_ButtonSpawner( room_width / 2, room_height / 8, "Traps", false, fnt_title, c_white, fa_center, fa_center, spr_button, false );
         Scr_ShopProductSpawner( room_width / 2.75, room_height / 2, "Pit", 96, "Select / Buy", -76, "Benefits", -108, spr_shop_product_temp, 25, 3 );
         Scr_ShopProductSpawner( room_width / 1.575, room_height / 2, "Spikes", 96, "Select / Buy", -76, "Benefits", -108, spr_shop_product_temp, 25, 4 );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 24, room_height / 8, "Coins: " + string(coins), false, fnt_shop_product_header, c_white, fa_left, fa_center, spr_button, true );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 24, room_height / 8, "Coins: " + string(coins), false, fnt_shop_product_header, c_black, fa_left, fa_center, spr_button, true );
         break;
     case rm_options:
         //clean up any active buttons
@@ -206,10 +206,10 @@ purchaseDialogOpen = false;
                 instance_destroy();
         }
         Scr_ButtonSpawner( room_width / 2, room_height / 8, "Game Options", false, fnt_option, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 5, room_height / 4.5, "Master Volume", false, fnt_option, c_white, fa_left, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 5, room_height / 2.5, "Music Volume", false, fnt_option, c_white, fa_left, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 5, room_height / 1.75, "Effects Volume", false, fnt_option, c_white, fa_left, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 5, (room_height / 4.5) + 80, "Master Volume", false, fnt_option, c_black, fa_left, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 5, (room_height / 2.5) + 80, "Music Volume", false, fnt_option, c_black, fa_left, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 5, (room_height / 1.75) + 80, "Effects Volume", false, fnt_option, c_black, fa_left, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
         break;
     case rm_levelselect:
         //clean up any active buttons
@@ -224,10 +224,10 @@ purchaseDialogOpen = false;
                 instance_destroy();
         }
         Scr_ButtonSpawner( room_width / 2, room_height / 8, "Select a Level", false, fnt_title, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 3, "Level 1", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 2, "Level 2", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.5, "Level 3", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 3, "Level 1", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 2, "Level 2", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.5, "Level 3", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Back", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
         Scr_ButtonSpawner( room_width / 24, room_height / 8, "Coins: " + string(coins), false, fnt_shop_product_header, c_white, fa_left, fa_center, spr_button, true );
         break;
     case rm_lvl_1:
@@ -243,7 +243,7 @@ purchaseDialogOpen = false;
                 instance_destroy();
         }
         //Scr_ButtonSpawner( room_width / 2, room_height / 8, "&lt;lvl1 placeholder&gt;", false, fnt_title_small, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 1.2, room_height / 1.05, "Quit Level", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 1.2, room_height / 1.05, "Quit Level", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
         Scr_ButtonSpawner( room_width / 24, room_height / 7, "Gems: " + string(fakeMoney), false, fnt_shop_product_header, c_white, fa_left, fa_center, spr_button, true );
         break;
     case rm_lvl_2:
@@ -259,7 +259,7 @@ purchaseDialogOpen = false;
                 instance_destroy();
         }
         Scr_ButtonSpawner( room_width / 2, room_height / 8, "&lt;lvl2 placeholder&gt;", false, fnt_title_small, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Quit Level", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Quit Level", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
         Scr_ButtonSpawner( room_width / 24, room_height / 7, "Gems: " + string(fakeMoney), false, fnt_shop_product_header, c_white, fa_left, fa_center, spr_button, true );
         break;
     case rm_lvl_3:
@@ -275,7 +275,7 @@ purchaseDialogOpen = false;
                 instance_destroy();
         }
         Scr_ButtonSpawner( room_width / 2, room_height / 8, "&lt;lvl3 placeholder&gt;", false, fnt_title_small, c_white, fa_center, fa_center, spr_button, false );
-        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Quit Level", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+        Scr_ButtonSpawner( room_width / 2, room_height / 1.2, "Quit Level", true, fnt_button_text, c_black, fa_center, fa_center, spr_button, false );
         Scr_ButtonSpawner( room_width / 24, room_height / 7, "Gems: " + string(fakeMoney), false, fnt_shop_product_header, c_white, fa_left, fa_center, spr_button, true );
         break;
 }

@@ -31,7 +31,7 @@ trapChosen = "";
 
 canAttack = false;
 
-
+myCost = 30;
 
 currentTarget = ""
 myDamage = 0;
@@ -168,6 +168,9 @@ direction = point_direction(xprevious,yprevious,x,y);
 move_snap(192,180);
 
 alarm[1] = 1;
+
+//deduct cost
+fakeMoney -= myCost;
 
 //Activates capabilities
 canAttack = true;
