@@ -7,6 +7,9 @@
   <sounds name="sound">
     <sound>sound\Sound_BGM</sound>
     <sound>sound\Sound_Effect</sound>
+    <sound>sound\Sound_Level1BGM</sound>
+    <sound>sound\Sound_Level2BGM</sound>
+    <sound>sound\Sound_Level3BGM</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_circle</sprite>
