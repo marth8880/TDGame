@@ -40,9 +40,8 @@ if(position_meeting(x + sprite_width/2, y, obj_obstacle_small) && canReroute)
 //Combat Collision Checks
 if(currentState == "COMBAT")
 {
-    enemyOutOfRange = false;
     if(canAttack)
-   {
+    {
         //Enemy Attack
         canAttack = false;
         currentTarget.myCurrentHealth -= myDamage;

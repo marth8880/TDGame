@@ -13,5 +13,4 @@ myDamage = 0;
 
 currentTarget = "";
 canAttack = true;
-enemyOutOfRange = true;
-
+canTakeTrapDamage = true;

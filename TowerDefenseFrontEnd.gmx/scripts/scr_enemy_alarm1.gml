@@ -1,0 +1,2 @@
+canTakeTrapDamage = true;
+

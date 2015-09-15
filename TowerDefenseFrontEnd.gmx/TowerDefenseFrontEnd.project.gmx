@@ -74,7 +74,9 @@
       <script>scripts\scr_enemy_controller_step.gml</script>
       <script>scripts\scr_enemy_controller_create.gml</script>
       <script>scripts\scr_enemy_alarm0.gml</script>
+      <script>scripts\scr_enemy_alarm1.gml</script>
       <script>scripts\obj_enemy_controller_collision.gml</script>
+      <script>scripts\scr_trap_collision.gml</script>
       <script>scripts\scr_enemy_spawner_CTRL_create.gml</script>
       <script>scripts\scr_enemy_spawner.gml</script>
       <script>scripts\scr_enemy_controller_draw.gml</script>
@@ -137,6 +139,7 @@
     </objects>
     <objects name="Traps">
       <object>objects\obj_trap_spikes</object>
+      <object>objects\obj_trap_parent</object>
       <object>objects\obj_trap_pit</object>
     </objects>
     <objects name="Units">

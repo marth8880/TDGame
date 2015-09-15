@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>Selection = instance_create(x, y, obj_trap_spikes);
 Selection.grabbed = true;
+Selection.trapChosen = "Spikes";
 </string>
           </argument>
         </arguments>
