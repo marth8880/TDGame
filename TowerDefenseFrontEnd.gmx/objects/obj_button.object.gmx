@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var myText, interactable, myFontType, myFontColor, myFontHAlign, myFontVAlign, myButtonSprite;
+            <string>var myText, interactable, myFontType, myFontColor, myFontHAlign, myFontVAlign, myButtonSprite, hasBackdrop;
 interactable = false;
 
 image_speed = 0;
@@ -158,11 +158,23 @@ else
             <string>if (interactable)
     draw_self();
 
-draw_set_font(myFontType);
 draw_set_halign(myFontHAlign);
 draw_set_valign(myFontVAlign);
+
+if (hasBackdrop)
+{
+    ww = string_width(myText);
+    hh = string_height(myText);
+    
+    draw_set_alpha(0.5);
+    draw_set_color(c_black);
+    draw_rectangle(x - 16, y - hh + 16, x + (ww / 1.75) + 16, y - 16, false);
+}
+
+draw_set_alpha(1.0);
+draw_set_font(myFontType);
 draw_set_color(myFontColor);
-draw_text(x, y, myText);
+draw_text(x, y - (sprite_height / 2), myText);
 </string>
           </argument>
         </arguments>

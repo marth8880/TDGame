@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var myHeaderText, myHeaderFontType, myHeaderVOffset, mySubHeaderText, mySubHeaderFontType, mySubHeaderVOffset, myBenefitText, myBenefitFontType, myBenefitVOffset, myButtonFontColor, myProductSprite, myProductCost;
+            <string>var myHeaderText, myHeaderFontType, myHeaderVOffset, mySubHeaderText, mySubHeaderFontType, mySubHeaderVOffset, myBenefitText, myBenefitFontType, myBenefitVOffset, myButtonFontColor, myProductSprite, myProductCost, myInventoryIndex;
 
 image_speed = 0;
 
@@ -57,14 +57,30 @@ image_speed = 0;
     shopItemHeaderText = myHeaderText;
     shopItemProductCost = myProductCost;
     
-    msg = show_question("Do you want to buy " + string(shopItemHeaderText) + " for " + string(shopItemProductCost) + " coins?");
-    
-    if (msg)
+    if (shopItemProductCost &lt;= coins)
     {
-        show_message("Purchase successful!");
+        if (!playerInventory[myInventoryIndex])
+        {
+            msg = show_question("Do you want to buy " + string(shopItemHeaderText) + " for " + string(shopItemProductCost) + " coins?");
+            
+            if (msg)
+            {
+                coins -= shopItemProductCost;
+                playerInventory[myInventoryIndex] = true;
+                show_message("Purchase successful!");
+            }
+            
+            //purchasePopUp = instance_create(room_width / 2, room_height / 2, obj_payment_dialogbox);
+        }
+        else
+        {
+            show_message("You already own this!");
+        }
     }
-    
-    //purchasePopUp = instance_create(room_width / 2, room_height / 2, obj_payment_dialogbox);
+    else
+    {
+        show_message("You don't have enough Coins!");
+    }
 }
 </string>
           </argument>

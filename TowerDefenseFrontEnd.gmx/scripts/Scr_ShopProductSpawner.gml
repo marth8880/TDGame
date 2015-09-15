@@ -1,6 +1,6 @@
 //Scr_ShopProductSpawner function script
 
-var xx, yy, headerText, headerFontType, headerVOffset, subHeaderText, subHeaderFontType, subHeaderVOffset, benefitText, benefitFontType, benefitVOffset, buttonFontColor, productSprite, productCost;
+var xx, yy, headerText, headerFontType, headerVOffset, subHeaderText, subHeaderFontType, subHeaderVOffset, benefitText, benefitFontType, benefitVOffset, buttonFontColor, productSprite, productCost, inventoryIndex;
 
 //args
 xx = argument0;
@@ -17,6 +17,7 @@ benefitVOffset = argument7;
 //buttonFontColor = argument8;
 productSprite = argument8;
 productCost = argument9;
+inventoryIndex = argument10;
 
 //create the object with its new properties
 button = instance_create(xx, yy, obj_shop_product);
@@ -29,6 +30,7 @@ button.mySubHeaderVOffset = subHeaderVOffset;
 button.myBenefitText = benefitText;
 button.myBenefitFontType = fnt_shop_product_benefit;
 button.myBenefitVOffset = benefitVOffset;
-button.myButtonFontColor = c_white;
+button.myButtonFontColor = c_black;
 button.myProductSprite = productSprite;
 button.myProductCost = productCost;
+button.myInventoryIndex = inventoryIndex;

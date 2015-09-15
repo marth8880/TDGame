@@ -83,9 +83,9 @@ with (buttonNo)
           <argument>
             <kind>1</kind>
             <string>
-titleText = Scr_ButtonSpawner( x, y - (sprite_height / 2.5), string(msg), false, fnt_shop_product_subheader, c_white, fa_center, fa_center, spr_button );
-buttonYes = Scr_ButtonSpawner( x, y + (sprite_height / 6), "Yes", true, fnt_button_text, c_white, fa_center, fa_center, spr_button );
-buttonNo = Scr_ButtonSpawner( x, y + (sprite_height / 4), "No", true, fnt_button_text, c_white, fa_center, fa_center, spr_button );
+titleText = Scr_ButtonSpawner( x, y - (sprite_height / 2.5), string(msg), false, fnt_shop_product_subheader, c_white, fa_center, fa_center, spr_button, false );
+buttonYes = Scr_ButtonSpawner( x, y + (sprite_height / 6), "Yes", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
+buttonNo = Scr_ButtonSpawner( x, y + (sprite_height / 4), "No", true, fnt_button_text, c_white, fa_center, fa_center, spr_button, false );
 </string>
           </argument>
         </arguments>

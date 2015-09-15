@@ -2,7 +2,7 @@
 <sprite>
   <type>0</type>
   <xorig>256</xorig>
-  <yorigin>48</yorigin>
+  <yorigin>96</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
