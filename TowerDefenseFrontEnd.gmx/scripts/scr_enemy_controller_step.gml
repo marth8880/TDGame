@@ -61,7 +61,7 @@ if(currentState == "COMBAT")
                 currentState = "";
             }
         }
-        alarm[0] = 15; 
+        alarm[0] = 15;
    }
 }
 
@@ -69,10 +69,28 @@ if(currentState == "COMBAT")
 if(myCurrentHealth <= 0)
 {
     currentTarget.inCombat = false;
+    
+    coins += 25;
+    deathCount += 1;
+    
+    if (deathCount = 7)
+    {
+        room_goto(rm_levelselect);
+    }
     with(self)
     {
         instance_destroy();
     }
+}
+
+if (x > room_width)
+{
+    hitCount += 1;
+}
+
+if (hitCount >= 1)
+{
+    room_goto(rm_levelselect);
 }
 
 //RE-ROUTE STATE
@@ -94,7 +112,7 @@ if(currentState == "REROUTE")
         } 
         if(newY < y)
         {
-            y -= myMovementSpeed;  
+            y -= myMovementSpeed;
         } 
     }
 }

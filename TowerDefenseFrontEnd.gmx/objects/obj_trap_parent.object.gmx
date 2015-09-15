@@ -31,6 +31,7 @@ trapChosen = "";
 
 canAttack = false;
 
+//deduct cost
 myCost = 30;
 
 currentTarget = ""
@@ -183,6 +184,38 @@ if(trapChosen == "Pit")
 {
     myDamage = 100;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (myCost &lt;= coins)
+{
+    //deduct cost
+    coins -= myCost;
+}
+else
+{
+    instance_destroy();
+}
+
 </string>
           </argument>
         </arguments>

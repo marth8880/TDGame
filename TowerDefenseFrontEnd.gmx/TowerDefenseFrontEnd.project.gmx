@@ -77,10 +77,10 @@
       <script>scripts\scr_enemy_alarm1.gml</script>
       <script>scripts\obj_enemy_controller_collision.gml</script>
       <script>scripts\scr_trap_collision.gml</script>
-      <script>scripts\scr_enemy_spawner_CTRL_waves.gml</script>
       <script>scripts\scr_enemy_spawner_CTRL_create.gml</script>
       <script>scripts\scr_enemy_spawner.gml</script>
       <script>scripts\scr_enemy_controller_draw.gml</script>
+      <script>scripts\scr_enemy_spawner_CTRL_waves.gml</script>
     </scripts>
     <scripts name="Sound">
       <script>scripts\Scr_SoundControl_Step.gml</script>
@@ -149,6 +149,9 @@
       <object>objects\obj_unit_fighter</object>
     </objects>
     <object>objects\obj_placeable_area</object>
+    <object>objects\obj_level1music</object>
+    <object>objects\obj_level2music</object>
+    <object>objects\obj_level3music</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\TL_Waves</timeline>

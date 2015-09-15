@@ -34,6 +34,7 @@ canAttack = false;
 myCurrentHealth = 100;
 myMaxHealth = 100;
 
+//deduct cost
 myCost = 50;
 
 currentTarget = "";
@@ -66,9 +67,9 @@ inCombat = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!place_meeting(x, y, obj_placeable_area) || place_meeting(x, y, obj_unit_parent) || place_meeting(x, y, obj_trap_parent))
+            <string>if (!place_meeting(x, y, obj_placeable_area) || place_meeting(x, y, obj_unit_parent) || place_meeting(x, y, obj_trap_parent) )
 {
-        instance_destroy(); 
+        instance_destroy();
 }
 </string>
           </argument>
@@ -190,9 +191,6 @@ move_snap(192,180);
 
 alarm[1] = 1;
 
-//deduct cost
-fakeMoney -= myCost;
-
 //Activates capabilities
 canAttack = true;
 
@@ -204,6 +202,38 @@ if(unitChosen == "Fighter")
 {
     myDamage = 35;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (myCost &lt;= coins)
+{
+    //deduct cost
+    coins -= myCost;
+}
+else
+{
+    instance_destroy();
+}
+
 </string>
           </argument>
         </arguments>

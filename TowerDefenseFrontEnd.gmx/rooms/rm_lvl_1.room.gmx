@@ -107,6 +107,7 @@
     <instance objName="obj_placeable_area" x="1440" y="630" name="inst_C14E79D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_placeable_area" x="1440" y="450" name="inst_4332AA08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_HUD_Unit_Fighter" x="1824" y="270" name="inst_2A631679" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level1music" x="192" y="0" name="inst_8B17C354" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
