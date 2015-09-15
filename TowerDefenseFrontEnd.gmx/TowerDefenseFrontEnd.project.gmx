@@ -77,6 +77,7 @@
       <script>scripts\scr_enemy_alarm1.gml</script>
       <script>scripts\obj_enemy_controller_collision.gml</script>
       <script>scripts\scr_trap_collision.gml</script>
+      <script>scripts\scr_enemy_spawner_CTRL_waves.gml</script>
       <script>scripts\scr_enemy_spawner_CTRL_create.gml</script>
       <script>scripts\scr_enemy_spawner.gml</script>
       <script>scripts\scr_enemy_controller_draw.gml</script>
@@ -149,6 +150,9 @@
     </objects>
     <object>objects\obj_placeable_area</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\TL_Waves</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_shop</room>

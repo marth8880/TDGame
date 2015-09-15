@@ -1,7 +1,4 @@
-wave = argument0; 
-//scr_enemy_spawner(3);
-//scr_enemy_spawner(3);
-//scr_enemy_spawner(3);
+timeline_index = TL_Waves
+timeline_running = true;
+ 
 
-//if(wave = 1)
-scr_enemy_spawner(2);
